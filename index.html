@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Apply for Mod</title>
+  <title>Apply for Moderator</title>
+  <meta charset="UTF-8">
 </head>
 <body>
-  <h1>Moderator Application</h1>
+  <h1>Mod Application Form</h1>
+
   <form action="https://formspree.io/f/xkgbdlod" method="POST">
     <label for="name">Name:</label><br>
     <input type="text" id="name" name="Name" required><br><br>
@@ -15,13 +17,17 @@
     <label for="discord">What's your Discord name?</label><br>
     <input type="text" id="discord" name="Discord" required><br><br>
 
+    <label for="lua">How strong is your Lua?</label><br>
+    <input type="text" id="lua" name="Lua Skill Level" placeholder="Beginner / Intermediate / Advanced" required><br><br>
+
     <label for="experience">Do you have experience as a mod?</label><br>
-    <textarea id="experience" name="Experience" required></textarea><br><br>
+    <textarea id="experience" name="Mod Experience" rows="4" required></textarea><br><br>
 
     <label for="reason">Why should we pick you?</label><br>
-    <textarea id="reason" name="Reason" required></textarea><br><br>
+    <textarea id="reason" name="Why Pick You" rows="4" required></textarea><br><br>
 
     <button type="submit">Submit Application</button>
   </form>
+
 </body>
 </html>
