@@ -10,9 +10,7 @@
       margin: 0;
       padding: 0;
       font-family: 'Orbitron', sans-serif;
-      background: linear-gradient(270deg, #ff00cc, #00ffff, #ff9900, #00ff66, #ff0000, #6600ff);
-      background-size: 1200% 1200%;
-      animation: rainbow 30s ease infinite;
+      background: #0a0a0a;
       height: 100vh;
       display: flex;
       align-items: center;
@@ -21,20 +19,14 @@
       overflow: hidden;
     }
 
-    @keyframes rainbow {
-      0% {background-position: 0% 50%;}
-      50% {background-position: 100% 50%;}
-      100% {background-position: 0% 50%;}
-    }
-
     .container {
-      background: rgba(0, 0, 0, 0.6);
-      border: 2px solid #ffffff;
+      background: rgba(0, 0, 0, 0.7);
+      border: 2px solid #ff1a1a;
       border-radius: 15px;
       padding: 30px;
       width: 90%;
       max-width: 600px;
-      box-shadow: 0 0 20px #fff, 0 0 40px #fff inset;
+      box-shadow: 0 0 25px #ff1a1a, 0 0 60px #ff1a1a inset;
       position: relative;
       z-index: 1;
     }
@@ -42,16 +34,16 @@
     h1 {
       text-align: center;
       font-size: 28px;
-      color: #ffffff;
-      text-shadow: 0 0 10px #fff;
+      color: #ff1a1a;
+      text-shadow: 0 0 12px #ff1a1a;
     }
 
     label {
       display: block;
       margin-top: 15px;
       font-size: 16px;
-      color: #fff;
-      text-shadow: 0 0 5px #fff;
+      color: #ffcccc;
+      text-shadow: 0 0 5px #ff1a1a;
     }
 
     input, textarea {
@@ -60,36 +52,35 @@
       margin-top: 5px;
       border: none;
       border-radius: 8px;
-      background-color: #1a1a2e;
+      background-color: #1a1a1a;
       color: #fff;
-      box-shadow: inset 0 0 10px #fff;
+      box-shadow: inset 0 0 10px #ff1a1a;
     }
 
     input:focus, textarea:focus {
       outline: none;
-      box-shadow: 0 0 10px #fff, inset 0 0 10px #fff;
+      box-shadow: 0 0 10px #ff1a1a, inset 0 0 10px #ff1a1a;
     }
 
     button {
       margin-top: 20px;
       width: 100%;
       padding: 12px;
-      background-color: #ffffff;
-      color: black;
+      background-color: #ff1a1a;
+      color: white;
       font-size: 16px;
       border: none;
       border-radius: 8px;
       cursor: pointer;
       transition: 0.3s;
-      box-shadow: 0 0 10px #fff;
+      box-shadow: 0 0 15px #ff1a1a;
     }
 
     button:hover {
-      background-color: #dddddd;
-      box-shadow: 0 0 20px #fff, 0 0 40px #fff;
+      background-color: #e60000;
+      box-shadow: 0 0 25px #ff1a1a, 0 0 50px #ff1a1a;
     }
 
-    /* YouTube background */
     iframe {
       position: fixed;
       top: -50px;
@@ -106,7 +97,7 @@
 
   <!-- YouTube video background -->
   <iframe
-    src="https://www.youtube.com/embed/aSMsoN55y4w?autoplay=1&mute=1&loop=1&playlist=3s2J7Fod1lAcIKVI"
+    src="https://www.youtube.com/embed/aSMsoN55y4w?autoplay=1&mute=1&loop=1&playlist=aSMsoN55y4w&controls=0&modestbranding=1"
     frameborder="0"
     allow="autoplay"
     allowfullscreen>
