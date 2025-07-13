@@ -10,37 +10,48 @@
       margin: 0;
       padding: 0;
       font-family: 'Orbitron', sans-serif;
-      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      background: linear-gradient(270deg, #ff00cc, #00ffff, #ff9900, #00ff66, #ff0000, #6600ff);
+      background-size: 1200% 1200%;
+      animation: rainbow 30s ease infinite;
       height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
       color: #fff;
+      overflow: hidden;
+    }
+
+    @keyframes rainbow {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
     }
 
     .container {
       background: rgba(0, 0, 0, 0.6);
-      border: 2px solid #ff00cc;
+      border: 2px solid #ffffff;
       border-radius: 15px;
       padding: 30px;
       width: 90%;
       max-width: 600px;
-      box-shadow: 0 0 20px #ff00cc, 0 0 40px #ff00cc inset;
+      box-shadow: 0 0 20px #fff, 0 0 40px #fff inset;
+      position: relative;
+      z-index: 1;
     }
 
     h1 {
       text-align: center;
       font-size: 28px;
-      color: #ff99ff;
-      text-shadow: 0 0 10px #ff00cc;
+      color: #ffffff;
+      text-shadow: 0 0 10px #fff;
     }
 
     label {
       display: block;
       margin-top: 15px;
       font-size: 16px;
-      color: #ffcaff;
-      text-shadow: 0 0 5px #ff00cc;
+      color: #fff;
+      text-shadow: 0 0 5px #fff;
     }
 
     input, textarea {
@@ -51,35 +62,56 @@
       border-radius: 8px;
       background-color: #1a1a2e;
       color: #fff;
-      box-shadow: inset 0 0 10px #ff00cc;
+      box-shadow: inset 0 0 10px #fff;
     }
 
     input:focus, textarea:focus {
       outline: none;
-      box-shadow: 0 0 10px #ff00cc, inset 0 0 10px #ff00cc;
+      box-shadow: 0 0 10px #fff, inset 0 0 10px #fff;
     }
 
     button {
       margin-top: 20px;
       width: 100%;
       padding: 12px;
-      background-color: #ff00cc;
-      color: white;
+      background-color: #ffffff;
+      color: black;
       font-size: 16px;
       border: none;
       border-radius: 8px;
       cursor: pointer;
       transition: 0.3s;
-      box-shadow: 0 0 10px #ff00cc;
+      box-shadow: 0 0 10px #fff;
     }
 
     button:hover {
-      background-color: #e600b8;
-      box-shadow: 0 0 20px #ff00cc, 0 0 40px #ff00cc;
+      background-color: #dddddd;
+      box-shadow: 0 0 20px #fff, 0 0 40px #fff;
+    }
+
+    /* YouTube background */
+    iframe {
+      position: fixed;
+      top: -50px;
+      left: -50px;
+      width: 120%;
+      height: 120%;
+      pointer-events: none;
+      opacity: 0.2;
+      z-index: 0;
     }
   </style>
 </head>
 <body>
+
+  <!-- YouTube video background -->
+  <iframe
+    src="https://www.youtube.com/embed/aSMsoN55y4w?autoplay=1&mute=1&loop=1&playlist=3s2J7Fod1lAcIKVI"
+    frameborder="0"
+    allow="autoplay"
+    allowfullscreen>
+  </iframe>
+
   <div class="container">
     <h1>Mod Application</h1>
     <form action="https://formspree.io/f/xkgbdlod" method="POST">
@@ -104,5 +136,6 @@
       <button type="submit">Submit Application</button>
     </form>
   </div>
+
 </body>
 </html>
